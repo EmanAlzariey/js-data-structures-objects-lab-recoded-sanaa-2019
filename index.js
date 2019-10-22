@@ -4,18 +4,18 @@
 // const obj = { foo: "bar", key: "value" };
 
 function updateDriverWithKeyAndValue(obj, key, value){
-    //doesn't change driver and returns newDriver 
+    //doesn't change driver and returns newDriver
     const newObj = Object.assign({}, obj)
- 
+
     newObj[key] = value; // has an updated value for the key passed in.
- 
+
     return newObj;
-} 
+}
 
 function destructivelyUpdateDriverWithKeyAndValue(obj, key, value){
     // changes driver and returns newDriver//take key from original and overwrite it
     obj[key] = value;
- 
+
     return obj; //return new
 
 }
